@@ -26,3 +26,8 @@ sudo chmod 777 /etc/init.d/simple_script.sh
 
 sudo crontab -e
 @ reboot /home/ufabc/Documentos/simple_script.sh
+
+
+// para rodar o xmr-stak:
+sudo sysctl -w vm.nr_hugepages=128
+./xmr-stak/build/bin/xmr-stak --currency monero -o xmrpool.eu:3333 -u 47BuFWQ1jF6bshb1n2DcxaVPLwNFQVqKi7kV6uWFxWpSe9B3R93arEKQdr8DsBcanZ9zyqFywaYitc5PRBUxaXRoMjAWjrr
