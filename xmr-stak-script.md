@@ -31,3 +31,9 @@ sudo crontab -e
 // para rodar o xmr-stak:
 sudo sysctl -w vm.nr_hugepages=128
 ./xmr-stak/build/bin/xmr-stak --currency monero -o xmrpool.eu:3333 -u 47BuFWQ1jF6bshb1n2DcxaVPLwNFQVqKi7kV6uWFxWpSe9B3R93arEKQdr8DsBcanZ9zyqFywaYitc5PRBUxaXRoMjAWjrr
+
+sudo sysctl -w vm.nr_hugepages=128; ./xmr-stak/build/bin/xmr-stak --currency monero -o xmrpool.eu:3333 -u 47BuFWQ1jF6bshb1n2DcxaVPLwNFQVqKi7kV6uWFxWpSe9B3R93arEKQdr8DsBcanZ9zyqFywaYitc5PRBUxaXRoMjAWjrr; echo -ne '\n'; echo -ne '\n'
+
+ExecStart=/home/aniket/xmr-stak.sh -c YOURCONFIGFILELOCATION
+
+https://www.cryptocurrencyfreak.com/2017/08/22/monero-mining-xmr-stak-cpu-ubuntu-16-04/
